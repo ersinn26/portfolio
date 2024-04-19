@@ -1,0 +1,25 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/mixins.scss';
+
+.projects {
+    @include bgImg(100vh, $main-bgImg-path);
+    // height: 100vh;
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 20px;
+    padding-top: 100px;
+
+    gap: 40px;
+    color: $text-color;
+ 
+}
+
+.project__img {
+    width: 500px;
+    height: 300px;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    box-shadow:  0 5px 20px rgba(209, 93, 93, 0.5);
+}
