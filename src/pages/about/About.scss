@@ -1,0 +1,47 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/mixins.scss";
+.aboutbio-image {
+  padding-top: 100px;
+
+  text-align: center;
+
+  h2 {
+    font-size: 3rem;
+    color: $secondary-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 2rem;
+    line-height: 1.5rem;
+    color: $text-color;
+  }
+}
+
+.about {
+  @include bgImg(100vh, $main-bgImg-path);
+  height: 100vh;
+  background-size: cover;
+
+  &container {
+    // border: 2px solid red;
+    width: 70vw;
+    margin: 2rem auto;
+  }
+
+  .about__job {
+    margin: 1rem;
+    background-color: lighten($primary-color, 10%);
+    padding: 1rem;
+    border-bottom: 5px solid $secondary-color;
+
+    h2,
+    h3 {
+      margin: 0.5rem 0;
+    }
+
+    h6 {
+      margin: 0.3rem 0;
+    }
+  }
+}

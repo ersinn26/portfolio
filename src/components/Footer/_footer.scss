@@ -2,6 +2,11 @@
 //*   FOOTER
 //*****************************************************
 
+@import "../../scss/mixins";
+@import "../../scss/variables";
+@import "../../scss/reset";
+
+
 .link-style{
     a{
         padding: 0.4rem;
