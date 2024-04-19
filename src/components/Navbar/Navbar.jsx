@@ -1,29 +1,37 @@
-import "./_nav.scss"
+import { NavLink } from "react-router-dom";
+import "./_nav.scss";
 
-
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
     <div class="home-bgImg-container">
-       <nav class="nav">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link nav__link--active">Home</a>
+            <NavLink to="/" class="nav__link nav__link--active">
+              Home
+            </NavLink>
           </li>
           <li class="nav__item">
-            <a href="about.html" class="nav__link">About Me</a>
+            <NavLink to="about" class="nav__link">
+              About Me
+            </NavLink>
           </li>
           <li class="nav__item">
-            <a href="projects.html" class="nav__link">My Projects</a>
+            <NavLink to="projects" class="nav__link">
+              My Projects
+            </NavLink>
           </li>
           <li class="nav__item">
-            <a href="contact.html" class="nav__link">Contact</a>
+            <NavLink to="contact" class="nav__link">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
